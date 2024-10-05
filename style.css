@@ -17,22 +17,15 @@ body{
     justify-content: center;
     margin-left: 10vw;
 }
-
+.navbar a{
+    text-decoration: none;
+}
 .reference-link{
     display: flex;
     justify-content: center;
     height: 10vh;
 }
-
-/*****button{
-border-radius: 2em;
-background-color: grey;
-color: white;
-margin-top: 2.5vh;
-
-}*****/
 .nav-text{
-display: flex;
 line-height: 1em;
 font-size: 5vh;
 color: white;
@@ -184,3 +177,42 @@ button{
  z-index: 0;
  box-shadow: 40px 0 100px  #008cff , -40px 0 100px  #e100ff;
   }
+@media screen and (width<750px) {
+    .reference-link{
+        display: block;
+    }
+    button{
+  margin-top: 0;
+    }
+    .main,.skills ,.projects,.contacts{
+        min-height: 70vh;
+    }
+    .navbar{
+        display: block;
+        box-sizing: border-box;
+    }
+ .nav-text{
+    font-size: 3vh;
+    margin-top: 20vh;
+ }   
+ .box-img{
+    margin-right: 5vw;
+ }
+}
+ @media screen and (width>750px) and (width<1400px) {
+    
+   
+    .skills ,.projects{
+        min-height: 65vh;
+    }
+    .main{
+        min-height: 55vh;
+    }
+    .contacts{
+        min-height: 70vh;
+    }
+ .text-1{
+    margin: 1em;
+ }
+
+}
